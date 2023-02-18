@@ -5,10 +5,28 @@
  <Style>
  .class1{
 background-color : Blue;
+   color : pink;
    padding : 10px
  }
+   .class2{
+   background-color : Pink;
+     color  : Blue;
+   }
  </style>
  <BODY>
  <H1>Hello World</H1>
  <Button>Click me</Button>
  <H1 ID = "ID1" class="classs1"> Check The JS</H1>
+   
+   <Script>
+     unction myFunction() {
+  const element = document.getElementById("ID1");
+  if (element.className == "class1") {
+    element.className = "class2";
+  } else {
+    element.className = "class1";
+  }
+}
+   </Script>
+</body>
+</html>
